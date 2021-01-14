@@ -1,0 +1,436 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  /* font-size: 1.6rem; */
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.topnav{
+  /* border: solid black; */
+  width: 100%;
+  height: 10rem;
+}
+
+.topnavmenu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 10rem;
+}
+
+.topnavmenu li{
+  float: left;
+  font-size: 2rem;
+  padding-left: 4rem;
+}
+
+.topnavmenu a:visited{
+  color: black;
+}
+
+.firstpagebackground{
+  background-image: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1531&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70rem;
+}
+
+.mainpage{
+  /* border: solid black; */
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mainpageinfo{
+  /* border: solid black; */
+  width: 60%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15rem;
+}
+
+.mainpageinfo h1{
+  font-size: 6rem;
+}
+
+.searchlocationbox{
+  display: flex;
+  flex-flow: row;
+  font-size: 2rem;
+}
+
+.locationbutton{
+  margin-top: 0.5rem;
+}
+
+.locationbutton > a{
+  background-color: orange;
+  color: white;
+  border: none;
+}
+
+.socialmedialinks {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+}
+
+.socialmedialinks li{
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+
+.socialmedialinks a{
+  color: orange;
+}
+
+.socialmedialinks a:visited{
+  color: orange;
+}
+
+.secondpage{
+  background-image: url("https://images.unsplash.com/photo-1512668033346-09cfb0d8597b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1741&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border: solid black; */
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.secondpageinfo{
+  /* border: solid black; */
+  width: 40%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+  height: 45rem;
+
+}
+
+.secondpageinfo h1{
+  font-size: 6rem;
+  margin-top: -5rem;
+}
+
+.secondpageinfo h4{
+  color: orange;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+
+.secondtextone, .secondtexttwo{
+  word-wrap: break-word;
+}
+
+.secondtextone{
+  margin-top: -4rem;
+  font-size: 1.5rem;
+}
+
+.secondtexttwo{
+  margin-top: -2rem;
+  font-size: 1.5rem;
+}
+
+.discovermenubutton > a{
+  background-color: orange;
+  color: white;
+  border: none;
+  font-size: 2rem;
+}
+
+.thirdpage{
+  /* border: solid black; */
+  width: 100%;
+  height: 90rem;
+}
+
+.thirdpage h1{
+  font-size: 6rem;
+}
+
+.orderonlinenowtext{
+  /* border: solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+
+.oontitle{
+  color: orange;
+  font-size: 2rem;
+}
+
+.thirdpagetitle{
+  /* border: solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+}
+
+.bottomnavmenu{
+  /* border: solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottomnavmenu li{
+  padding-right: 4rem;
+  font-size: 2rem;
+}
+
+.bottomnavmenu a{
+  color: black;
+}
+
+.bottomnavmenu a:visited{
+  color: black;
+}
+
+.eightblockcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.eightblockcontainer > div{
+  /* border: solid black; */
+  padding: 12rem;
+  margin: 2rem;
+  height: 30rem;
+}
+
+.block1{
+  background-image: url("https://images.unsplash.com/photo-1580916919606-647d8ac4a8de?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1650&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 19%;
+}
+.block2{
+  background-image: url("https://images.unsplash.com/photo-1580916883250-437bcb0fec1d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 19%;
+}
+.block3{
+  background-image: url("https://images.unsplash.com/photo-1503011994592-d30eb1ef61dc?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1595&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 19%;
+}
+.block4{
+  background-image: url("https://images.unsplash.com/photo-1485962398705-ef6a13c41e8f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 19%;
+}
+.block5{
+  background-image: url("https://images.unsplash.com/photo-1484980972926-edee96e0960d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 19%;
+}
+.block6{
+  background-image: url("https://images.unsplash.com/photo-1576020688457-6f06d17c5702?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 19%;
+}
+.block7{
+  background-image: url("https://images.unsplash.com/photo-1494390248081-4e521a5940db?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1595&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 19%;
+}
+.block8{
+  background-image: url("https://images.unsplash.com/photo-1495214783159-3503fd1b572d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 19%;
+}
+
+.fourthpage{
+  /* border: solid black; */
+  width: 100%;
+  height: 70rem;
+}
+
+.bttitle, .actualnumber{
+  color: orange;
+}
+
+.ophtitle{
+  font-size: 6rem;
+  margin-top: -2rem;
+}
+
+.fourthcentercolumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.hourscontainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  /* border: solid black; */
+  font-size: 2rem;
+}
+
+.fourthpagehoursone{
+  margin-right: 10rem;
+}
+
+.callnowlogo, .callnowtext{
+  text-align: center;
+}
+
+.callnowlog a{
+  color: black;
+}
+
+.callnowlogo a:visited{
+  color: black;
+}
+
+.callnowtext a{
+  color: black;
+}
+
+.callnowtext a:visited{
+  color: black;
+}
+
+.fourthpagevid{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.fourthpagevid img{
+  width: 50rem;
+  height: 30rem;
+  /* border: solid black; */
+  background-image: url("https://images.unsplash.com/photo-1486428263684-28ec9e4f2584?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fifthpage{
+  /* border: solid black; */
+  width: 100%;
+  height: 70rem;
+}
+
+.fifthpage h1{
+  font-size: 6rem;
+}
+
+.fifthcentercolumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cstitle{
+  font-size: 6rem;
+  margin-top: -2rem;
+}
+
+.testtitle{
+  color: orange;
+  font-size: 2rem;
+}
+
+.fifthpagejohn{
+
+}
+
+.fifthcentercolumn p{
+  font-style: italic;
+  word-wrap: break-word;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.fifthcentercolumn h3{
+  font-size: 3rem;
+}
+
+
+.artdirectortext{
+  margin-top: -1.5rem;
+  font-size: 1.5rem;
+}
+
+.fivestarstext{
+  font-size: 3rem;
+  margin-top: 1.5rem;
+  color: yellow;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
